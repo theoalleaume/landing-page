@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*
+{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+    padding: 0;
+    margin: 0;
+}
+nav p
+{   
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.nav-top ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+hr
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    size: 2px;
+}
+.nav-bottom
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.nav-bottom ul
+{
+    margin: 1.875rem;
+}
+.nav-bottom ul li
+{
+    display: inline;
+    padding: 3rem;
+}
+.nav-bottom ul li a
+{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    padding-right: 1rem;
+}
+.nav-bottom ul li a:hover
+{
+    color: gray;
+}
+.logo
+{
+    width: 80px;
+    height: 80px;
+}
+.compte
+{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.card
+{
+    background-color: lightgray;
+}
+
+.presentation
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: url(/images/image_promotionnelle.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 0;
+}
+.presentation video
+{
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    z-index: 1;
+}
+.text
+{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    z-index: 2; 
+}
+.text h2
+{
+    font-size: 50px;
+    color:#fff;
+}
+.button
+{
+    display: inline-block;
+    background-color: transparent;
+    border: 4px solid #fff;
+    border-radius: 20px;
+    font-family: bold;
+    font-size: 25px;
+    color: #fff;
+    margin:1rem;
+    padding: 1.25rem;
+}
+.button:hover
+{
+    background-color: #fff;
+    color: black;
+    border: 4px solid black;
+    transition: cubic-bezier(0.46, 0.03, 0.52, 0.98) 0.2s;
+    font-weight: bold;
+}
+.card
+{
+    margin:10% 10% 5%;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.card-image
+{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.card-description h3,p
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0.825em;
+    font-size: 20px;
+}
+.card-description ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+.info
+{
+    background-color: black;
+    color: white;
+}
+.info ul
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.info ul li
+{
+    display: inline;
+}
+.info ul li i
+{
+    padding-right: 10px;
+}
+.fa-ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.container img
+{
+    width: 150px;
+    height: 35px;
+}
+.réseaux
+{
+    padding: 20px;
+}
+.réseaux i 
+{
+    font-size: 40px;
+    padding-right: 20px;
+    color: black;
+}
+footer p
+{
+    font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 800px)
+{   
+    nav p{
+        font-size: 50px;
+    }
+    .nav-top img{
+        display: none;
+    }
+    .presentation
+    {
+        width: 100%;
+    }
+    .presentation video{
+        width: 100%;
+    }
+    .text{
+        width: 80%;
+    }
+    .text h2{
+        
+        font-size: 1.25rem;
+    }
+    .button
+    {
+        font-size: 10px;
+    }
+    .card-image img{
+        width: 100%;
+    }
+    .card-description ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .info ul{
+        display: flex;
+        align-items: stretch;
+    }
+    .info ul li{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        font-size: 0.9rem;
+    }
+    .info ul li i{
+        padding: 10px;
+    }
+    .fa-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+}
+    
